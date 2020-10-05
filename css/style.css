@@ -507,7 +507,6 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
   min-height: 350px;
   transition: all .3s ease;
   margin: 15px 0;
-  margin-bottom: 0;
   position: relative;
 }
 #productcategories .slider .slider-box .image-wrapper {
