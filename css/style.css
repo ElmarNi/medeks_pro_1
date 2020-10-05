@@ -504,19 +504,21 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 #productcategories .slider .slider-box {
   background-color: white;
   border: 1px solid #dddddd;
-  min-height: 400px;
+  min-height: 350px;
   transition: all .3s ease;
   margin: 15px 0;
   margin-bottom: 0;
   position: relative;
 }
 #productcategories .slider .slider-box .image-wrapper {
-  height: 300px;
+  height: 250px;
   padding: 20px;
 }
 #productcategories .slider .slider-box .image-wrapper img {
   width: 100%;
   height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 #productcategories .slider .slider-box .content {
   padding: 15px 20px;
