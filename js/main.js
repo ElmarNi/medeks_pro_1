@@ -25,10 +25,24 @@ $(document).ready(function () {
   $('#productcategories .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    items: 5,
     nav:true,
     autoplay: false,
-    autoplayTimeout: 3000
+    autoplayTimeout: 3000,
+    responsiveClass:true,
+    responsive: {
+      0:{
+        items: 1
+      },
+      768:{
+        items: 2
+      },
+      992:{
+        items: 3
+      },
+      1200:{
+        items: 5
+      }
+    }
   });
   $("header .open-menu").click(function (e) {
     e.preventDefault();
