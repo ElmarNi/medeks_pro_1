@@ -169,6 +169,12 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 #large-screens .languages ul li img{
   margin-right: 7px;
 }
+#large-screens .languages ul li{
+  transition: all .3s ease;
+}
+#large-screens .languages ul li:hover{
+  background-color: #f8f8f8;
+}
 #large-screens .logo img {
   width: 119px;
 }
@@ -459,6 +465,7 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: center center;
 }
 #productcategories .box::before {
   content: '';
@@ -482,7 +489,7 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 }
 #productcategories .box h1 {
   color: white;
-  width: 80%;
+  width: 100%;
   font-size: 22px;
 }
 #productcategories .box .more {
@@ -494,15 +501,14 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 #productcategories .box:hover .more a i {
   transform: translate(6px, 1px);
 }
-#productcategories .slider {
-  margin-bottom: 40px;
-}
 #productcategories .slider .slider-box {
   background-color: white;
   border: 1px solid #dddddd;
   min-height: 400px;
   transition: all .3s ease;
   margin: 15px 0;
+  margin-bottom: 0;
+  position: relative;
 }
 #productcategories .slider .slider-box .image-wrapper {
   height: 300px;
@@ -522,6 +528,39 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 }
 #productcategories .slider .slider-box:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#productcategories .tag{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 120px;
+  height: 130px;
+  overflow: hidden;
+}
+#productcategories .tag::after, #productcategories .tag::before{
+  content: '';
+  position: absolute;
+  border: 5px solid #0db751;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+#productcategories .tag::before{
+  right: 15px;
+}
+#productcategories .tag::after{
+  top: 95px;
+
+}
+#productcategories .tag span{
+  color: white;
+  display: block;
+  background-color: #0dd55d;
+  font-size: 12px;
+  transform: rotate(-45deg) translate(-54px, -13px);
+  padding: 5px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
 #productcategories .owl-nav.disabled{
   display: flex;

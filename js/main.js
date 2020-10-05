@@ -27,7 +27,7 @@ $(document).ready(function () {
     margin: 10,
     items: 5,
     nav:true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000
   });
   $("header .open-menu").click(function (e) {
