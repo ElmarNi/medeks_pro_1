@@ -651,6 +651,11 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767.98px) { 
+  #projects .owl-carousel .owl-item img{
+    height: 400px;
+  }
+}
 #projects .owl-dots{
   position: absolute;
   width: 100%;
