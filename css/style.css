@@ -718,9 +718,9 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 #about .right-side {
   background-image: url(../img/aboutimg.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 100% center;
   position: absolute;
   top: 0;
   right: 0;
