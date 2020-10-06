@@ -20,12 +20,12 @@ $(document).ready(function () {
     nav: true,
     autoplay: true,
     autoplayTimeout: 3000,
-    responsiveClass:true,
+    responsiveClass: true,
     responsive: {
-      0:{
+      0: {
         items: 1
       },
-      768:{
+      768: {
         items: 3
       },
     }
@@ -33,22 +33,22 @@ $(document).ready(function () {
   $('#productcategories .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav:true,
+    nav: true,
     dots: false,
     autoplay: false,
     autoplayTimeout: 3000,
-    responsiveClass:true,
+    responsiveClass: true,
     responsive: {
-      0:{
+      0: {
         items: 1
       },
-      768:{
+      768: {
         items: 2
       },
-      992:{
+      992: {
         items: 3
       },
-      1200:{
+      1200: {
         items: 5
       }
     }
@@ -84,6 +84,7 @@ $(document).ready(function () {
     e.preventDefault();
   });
   getMobileOperatingSystem()
+  setProjectImgHeight()
 });
 $(window).resize(function () {
   if ($(".small-screen-menu-nav nav").hasClass("active")) {
@@ -98,11 +99,24 @@ $(window).resize(function () {
     $(".small-screen-menu-nav .submenu ul").removeClass("active");
     $(".small-screen-menu-nav .submenu i").removeClass("active");
   }
+  $("#projects img").height("auto")
+  setTimeout(() => {
+    setProjectImgHeight()
+  }, 500);
 });
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        $("#callToaction").addClass("bgAtch")
-        $("#about .right-side").addClass("bgAtch")
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    $("#callToaction").addClass("bgAtch")
+    $("#about .right-side").addClass("bgAtch")
+  }
+}
+function setProjectImgHeight() {
+  var height = 0;
+  $("#projects img").each(function () { 
+    if ($(this).height() > height) {
+      height = $(this).height()
     }
+  })
+  $("#projects img").height(height);
 }
