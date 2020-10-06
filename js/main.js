@@ -10,17 +10,25 @@ $(document).ready(function () {
     center: true,
     loop: true,
     margin: 20,
-    items: 1.3,
+    items: 1.5,
     dots: true,
     nav: true
   });
   $('#referanceLogos .owl-carousel').owlCarousel({
     loop: true,
-    items: 1,
     dots: false,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 3000
+    autoplayTimeout: 3000,
+    responsiveClass:true,
+    responsive: {
+      0:{
+        items: 1
+      },
+      768:{
+        items: 3
+      },
+    }
   });
   $('#productcategories .owl-carousel').owlCarousel({
     loop: true,

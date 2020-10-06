@@ -639,7 +639,7 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 }
 
 #projects {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 #projects .owl-carousel .owl-wrapper {
   display: -webkit-box !important;
@@ -650,6 +650,27 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#projects .owl-dots{
+  position: absolute;
+  width: 100%;
+  padding-top: 12px;
+}
+#projects a:hover{
+  text-decoration: none;
+}
+#projects .short-info{
+  position: absolute;
+  bottom: 0;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  background: #00000082;
+  color: white;
+}
+
+#projects .short-info p{
+  margin: 0;
 }
 .owl-dots {
   display: -webkit-box;
@@ -728,18 +749,13 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
   width: 100%;
 }
 
-/* @media (min-width: 576) and (max-width: 1199.98px) {
-  #about {
-    padding: 60px 0;
-  }
-} */
 @media (min-width: 991.98px) {
   #about {
     padding: 0;
   }
 }
 #referanceLogos a img {
-  max-width: 120px;
+  max-width: 110px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: all .3s ease;
@@ -764,6 +780,10 @@ header .menu li a:hover, .small-screen-menu-nav .menu li a:hover {
 }
 #referanceLogos span {
   color: #0000006e;
+}
+#referanceLogos .owl-stage{
+  display: flex;
+  align-items: center;
 }
 
 footer {
